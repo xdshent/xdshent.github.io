@@ -58,10 +58,10 @@ tags:
           max-retries-on-same-service-instance: 1 #对同一实例的重试次数
           max-retries-on-next-service-instance: 1 #对其他实例的重试次数
           retryable-status-codes:
-            - 500 #重试的http状态码
+            - 200 #测试触发重试机制的http状态码, 200本为正常, 这里测试用
   ```
 
-  > 停掉生产者再次调用, 由日志可知重试次数总共4次(1次当前实例正常调用 + 1次当前实例重试调用 + 1次其他实例正常调用 + 1次其他实例重试调用)
+  > 由日志可知重试次数总共4次(1次当前实例正常调用 + 1次当前实例重试调用 + 1次其他实例正常调用 + 1次其他实例重试调用)
 
   ![重试次数日志](/img/assets/spring-cloud/open-feign/retry-log.png)
 
