@@ -65,4 +65,8 @@ tags:
 
   ![重试次数日志](/img/assets/spring-cloud/open-feign/retry-log.png)
 
-  
+* retry细节
+
+  > 由`BlockingLoadBalancedRetryPolicy`中的`canRetry`方法可知只有当请求是`GET`或者设置了`retryOnAllOperations`为`true`时才会进行重试, 猜测在HTTP协议中GET方法的语义为幂等, 而其他方法不是幂等不适合重试
+
+  ![retry细节](/img/assets/spring-cloud/open-feign/can-retry.png)
