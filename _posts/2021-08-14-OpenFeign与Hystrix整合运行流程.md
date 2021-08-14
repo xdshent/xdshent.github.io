@@ -34,8 +34,6 @@ feign:
     enabled: true
 ```
 
+# Hystrix启动以及运行流程
 
-
-#Hystrix启动以及运行流程
-
-![hystrix-process](/img/assets/spring-cloud/hystrix/hystrix-process.png)
+![hystrix-process](/img/assets/spring-cloud/hystrix/hystrix-process.jpg)
