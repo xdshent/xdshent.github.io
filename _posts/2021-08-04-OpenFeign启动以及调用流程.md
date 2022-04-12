@@ -5,7 +5,7 @@ date:       2021-08-04
 author:     "xdshent"
 catalog: true
 tags:
-    - SprinCloud
+    - SpringCloud
 ---
 
 ## 依赖版本
